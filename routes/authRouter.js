@@ -4,8 +4,6 @@ const controller = require("../controllers/authController");
 
 router.get("/", controller.isLoggedIn, controller.showIndex);
 router.get("/profile", controller.isLoggedIn, controller.showProfile);
-router.get("/", controller.showIndex);
-router.get("/profile", controller.showProfile);
 
 router.get("/login", controller.showLogin);
 router.get("/register", controller.showRegister);
